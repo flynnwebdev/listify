@@ -1,3 +1,28 @@
 // Place all the styles related to the lists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 50%;
+    th {
+        background: black;
+        color: white;
+    }
+    tr {
+        background-color: lightblue;
+        td {
+            padding: 5px 10px;
+            &:nth-child(2) {
+                text-align: right;
+            }
+        }
+        &:nth-child(odd) {
+            background-color: darken(lightblue, 20%);
+        }
+    }
+}
